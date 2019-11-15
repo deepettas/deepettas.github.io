@@ -1,7 +1,9 @@
 <template>
 	<g-link class="logo" to="/">
-	<g-image alt="Logo image" class="logo__image" src="~/assets/images/Logo_one.png" />
+	<g-image alt="Logo image" class="logo__image" src="~/assets/images/Logo_black.png" />
+
 	  <span class="logo__text">
+		  
 	    {{ $static.metadata.siteName }}
 	  </span>
 	</g-link>
