@@ -12,13 +12,13 @@
         This is my space
       </p>
 
-      <div class='side-menu'>
+      <div >
         <Sidemenu/> 
       </div>
       
     </div>
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>
-    <g-link class= "entries_link" to="/dionisispettas/"> Check me out</g-link>
+    <g-link class= "entries_link" to="/self/"> Check me out</g-link>
 
   </Layout>
 </template>
@@ -47,12 +47,10 @@ query {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
 export default {
   components: {
-    Author,
     PostCard,
     Sidemenu
   },

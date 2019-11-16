@@ -1,7 +1,7 @@
 <template>
-  <ResumeLayout :show-logo="False">
+  <ResumeLayout :show-logo="false">
     This is my page yo
-    <Author :show-title="true" />
+    <!-- <Author :show-title="true" /> -->
     
     <!-- List posts -->
     <!-- <div class="posts">

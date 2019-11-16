@@ -1,7 +1,8 @@
 <template>
 	<g-link class="logo" to="/">
-	<g-image alt="Logo image" class="logo__image" src="~/assets/images/Logo_black.png" />
-
+	<g-image alt="Logo image" class="logo__image_dark" src="~/assets/images/Logo_black.png" />
+	<g-image alt="Logo image" class="logo__image_light" src="~/assets/images/Logo_white.png" />
+	
 	  <span class="logo__text">
 		  
 	    {{ $static.metadata.siteName }}
@@ -17,17 +18,44 @@ query {
 }
 </static-query>
 
+<script>
+export default {
+  data() {
+    return {
+      darkTheme: window.__theme === 'dark',
+      
+    }
+  }
+  
+}
+</script>
+
+
+
 <style lang="scss">
 .logo {
   text-decoration: none;
   color: var(--body-color)!important;
   font-family: HelveticaNowText-Medium;
-  &__image {
+  &__image_dark {
 		vertical-align: middle;
 		border-radius: 99px;
 		height: 27px;
 		width: 27px;
 		margin-right: .9em;
+		display: var(--hide-dark);
+		
+  };
+	&__image_light {
+		vertical-align: middle;
+		border-radius: 99px;
+		height: 27px;
+		width: 27px;
+		margin-right: .9em;
+		display: var(--hide-light);
+
+		
 	}
+
 }
 </style>

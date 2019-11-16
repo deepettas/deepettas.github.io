@@ -16,6 +16,8 @@ body {
   --content-width: 860px;
   --header-height: 80px;
   --radius: 5px;
+  --hide-light: none;
+  --hide-dark: inherit;
 }
 
 // Override variables for Dark theme
@@ -27,6 +29,8 @@ body[data-theme="dark"] {
 	--body-color: #ced8de;
 	--title-color: #fff;
 	--link-color: #505050;
+	--hide-light: inherit;
+	--hide-dark: none;
 }
 
 // Make  things smaller for mobile

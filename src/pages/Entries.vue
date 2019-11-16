@@ -15,7 +15,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Subneural.space'
+    title: 'Entries'
   }
 }
 </script>
