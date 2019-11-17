@@ -1,6 +1,6 @@
 // Default variables
 html {
-	--base-font-size: 20px;
+	--base-font-size: 16px;
 }
 
 // Light default theme
@@ -36,10 +36,11 @@ body[data-theme="dark"] {
 // Make  things smaller for mobile
 @media screen and (max-width: 650px) {
 	html {
-		--base-font-size: 17px;
+		--base-font-size: 15px;
 	}
 	body {
 		--space: 1.5rem;
 		--header-height: 60px;
 	}
+	
 }

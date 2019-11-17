@@ -4,10 +4,11 @@
     <Author :show-title="true" /> -->
     
     <!-- List posts -->
-    <!-- <div class="posts">
+    <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div> -->
-    <div class="frame_container_post_menu">
+    </div>
+    
+    <div class="flex-container">
       <p>
         This is my space
       </p>
@@ -17,6 +18,7 @@
       </div>
       
     </div>
+
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>
     <g-link class= "entries_link" to="/self/"> Check me out</g-link>
 
@@ -68,13 +70,6 @@ export default {
   font-size: .7em;
   font-family: HelveticaNowText-Medium;
 }
-.frame_container_post_menu{
-  flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* for centering 3 blocks in the center */
-  justify-content: space-between;
-}
+
 
 </style>

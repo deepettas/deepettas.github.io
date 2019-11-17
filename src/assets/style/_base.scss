@@ -2,11 +2,13 @@
 * {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  	-moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
 	background-color: var(--bg-color);
+	
 	color: var(--body-color);
 	transition: color .6s, background-color .6s;
 	margin:0;
