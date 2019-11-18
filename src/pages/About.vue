@@ -4,27 +4,16 @@
     <h2 class="post__title"> about this space </h2>
     
     <div class="flex-container">
-      
-      <div class="about_container  post__content">  
-        <span style="font-weight:bold"> subneural space</span>
-        <p> 
-          SubNeural is a Space that enables the storage of Neural output of Dionisis Pettas. It evolves with it's creator, showcasing thought patterns about kyberphilosophy, existentialism & post-futurism.
-        </p>
-        <span style="font-weight:bold"> subject space</span>
-        <p> 
-            The zero-dimentional point of reference for this space is Curiosity. The rest is mathematics.
-        </p>
-      </div>
-      <!-- List posts -->
-      <div class="posts">
-        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+    
+      <!-- List about -->
+      <div class="about_container  post__content">
+        <AboutSection v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
       <div >
         <Sidemenu/> 
       </div>
        
-      
     </div>
     
   </Layout>
@@ -32,13 +21,14 @@
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost(filter: {title: { regex: "^about_contents"}, published: {eq: true}},order: ASC, sortBy: "index") {
     edges {
       node {
         id
+        index
         title
         date (format: "D. MMMM YYYY")
-        timeToRead
+        section
         description
         cover_image (width: 770, height: 380, blur: 10)
         path
@@ -55,11 +45,11 @@ query {
 
 
 <script>
-import PostCard from '~/components/PostCard.vue'
+import AboutSection from '~/components/AboutSection.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
 export default {
   components: {
-    PostCard,
+    AboutSection,
     Sidemenu
   },
   metaInfo: {

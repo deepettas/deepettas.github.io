@@ -6,7 +6,7 @@
         <Logo v-if="showLogo" /> 
       </div>
       <div class="header__right">
-              <About/>
+          <g-link class="about" to='/about/'> about </g-link>
         <ToggleTheme />
       </div>
     </header>
@@ -25,14 +25,12 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
-import About from '~/components/About.vue'
 export default {
   props: {
     showLogo: { default: true }
   },
   components: {
     Logo,
-    About,
     ToggleTheme
   }
 }
@@ -63,8 +61,23 @@ export default {
     position: sticky;
     width: 100%;
   }
+  
 }
 
+
+.about {
+    text-decoration: none;
+    color: var(--body-color)!important;
+    color: var(--body-color);
+    cursor: pointer;
+    padding-right: 1em;
+    &:hover {
+     opacity: .8
+    }
+      &:focus {
+      outline: none;
+}
+}
 .main {
   margin: 0 auto;
   padding: 1.5vw 15px 0;
