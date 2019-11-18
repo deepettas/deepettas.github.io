@@ -4,9 +4,30 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const about = require('./content/about/about.json');
+
+
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(store => {
+    const aboutType = store.addCollection({
+      typeName: 'About'
+    })
+
+    for (const item of about) {
+      aboutType.addNode({
+        id: item.id,
+        published: item.published,
+        index: item.index,
+        title: item.title,
+        section: item.section,
+        description: item.description
+      })
+    }
+
+
+
+
+    
   })
 }

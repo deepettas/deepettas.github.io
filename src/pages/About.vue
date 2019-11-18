@@ -21,22 +21,14 @@
 
 <page-query>
 query {
-  posts: allPost(filter: {title: { regex: "^about_contents"}, published: {eq: true}},order: ASC, sortBy: "index") {
+  posts: allAbout(filter: {title: { regex: "^about_contents"}, published: {eq: true}},order: ASC, sortBy: "index") {
     edges {
       node {
-        id
         index
         title
-        date (format: "D. MMMM YYYY")
         section
         description
-        cover_image (width: 770, height: 380, blur: 10)
-        path
-        tags {
-          id
-          title
-          path
-        }
+        
       }
     }
   }
