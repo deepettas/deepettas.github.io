@@ -36,7 +36,6 @@ export default {
 .logo {
   text-decoration: none;
   color: var(--body-color)!important;
-  font-family: HelveticaNowText-Medium;
   &__image_dark {
 		vertical-align: middle;
 		border-radius: 99px;

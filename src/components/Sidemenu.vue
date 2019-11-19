@@ -18,14 +18,14 @@
     margin-left: auto;
 
 	text-align: right;
-	width: 120px;
+	width: 200px;
     position: relative;
     margin-top: 75px;
     right: 0px;
     margin-right: 6.25%;
     z-index: 10;
-    font-family: HelveticaNowText-Medium;
-	font-size: .75em;
+	font-size: 0.9em;
+	font-weight: 600;
 	@media screen and (max-width: 650px) {
 		font-size: 1em;
 		width: 200px;

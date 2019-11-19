@@ -67,7 +67,7 @@ export default {
   color: var(--body-color)!important;
   width: 100%;
   font-size: .7em;
-  font-family: HelveticaNowText-Medium;
+  // font-family: HelveticaNowText-Medium;
 }
 
 

@@ -48,7 +48,7 @@ export default {
   z-index: 10;
 
   font-size: .7em;
-  font-family: HelveticaNowText-Medium;
+  // font-family: HelveticaNowText-Medium;
   &__left,
   &__right {
     display: flex;
