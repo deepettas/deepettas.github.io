@@ -67,10 +67,10 @@ export default {
 
   &__title {
     justify-content: center;
-    margin: 120px 0 50px 120px;
+    margin: 120px 0 0px 120px;
     
     @media screen and (max-width: 650px) {
-      margin: 120px 0 50px 0px ;
+      margin: 120px 0 0px 0px ;
       
     }
     

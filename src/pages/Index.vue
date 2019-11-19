@@ -9,16 +9,17 @@
     </div> -->
     
     <div class="flex-container">
-      <p>
+      <p >
         This is my space
       </p>
 
-      <Sidemenu/> 
-      
+      <div >
+        <Sidemenu/> 
+      </div>      
     </div>
-
+<!-- 
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>
-    <g-link class= "entries_link" to="/self/"> Check me out</g-link>
+    <g-link class= "entries_link" to="/self/"> Check me out</g-link> -->
 
   </Layout>
 </template>
