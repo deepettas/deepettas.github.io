@@ -18,17 +18,7 @@ query {
 }
 </static-query>
 
-<script>
-export default {
-  data() {
-    return {
-      darkTheme: window.__theme === 'dark',
-      
-    }
-  }
-  
-}
-</script>
+
 
 
 
