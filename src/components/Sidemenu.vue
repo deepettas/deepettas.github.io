@@ -5,7 +5,7 @@
         	<g-link class="link" to='/about/'> about this space </g-link>
         	<g-link class="link" to='/entries/'> all neural outputs </g-link>
 			<p>   </p>
-			<g-link class="link" to='/about/'> Dionisis Pettas </g-link>
+			<g-link class="link" to='/self/'> Dionisis Pettas </g-link>
 
 	</div>
 </template>
@@ -15,6 +15,8 @@
 .side-menu{
 	display: flex;
 	flex-direction: column;
+    margin-left: auto;
+
 	text-align: right;
 	width: 120px;
     position: relative;
@@ -23,10 +25,15 @@
     margin-right: 6.25%;
     z-index: 10;
     font-family: HelveticaNowText-Medium;
-    font-size: .75em;
+	font-size: .75em;
+	@media screen and (max-width: 650px) {
+		font-size: 1em;
+		width: 200px;
+    }
 
 }
 .link {
+	
 	text-decoration: none;
 	margin-bottom: 7px;
     color: var(--body-color)!important;
@@ -39,5 +46,8 @@
       &:focus {
       outline: none;
 	}
+	@media screen and (max-width: 650px) {
+		margin-bottom: 10px;
+    }
 }
 </style>

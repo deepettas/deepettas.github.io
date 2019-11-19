@@ -13,9 +13,7 @@
         This is my space
       </p>
 
-      <div >
-        <Sidemenu/> 
-      </div>
+      <Sidemenu/> 
       
     </div>
 

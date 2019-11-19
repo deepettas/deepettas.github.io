@@ -18,6 +18,7 @@ body {
   --radius: 5px;
   --hide-light: none;
   --hide-dark: inherit;
+
 }
 
 // Override variables for Dark theme
@@ -26,7 +27,7 @@ body[data-theme="dark"] {
 	--bg-content-color: #202020;
 	--bg-code: rgba(0,0,0,.3);
 	--border-color:  rgba(255,255,255,.1);
-	--body-color: #ced8de;
+	--body-color: #FEF9F9;
 	--title-color: #fff;
 	--link-color: #505050;
 	--hide-light: inherit;

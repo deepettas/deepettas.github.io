@@ -55,14 +55,15 @@ export default {
 <style lang="scss">
 .about_container{
   width: 42%;
-  
   @media screen and (max-width: 650px) {
       width: 100%;
+      padding-right: 10px;
+
     }
 }
 .post {
   margin: 120px 0 50px 120px;
-
+  
 
   &__title {
     justify-content: center;
@@ -70,6 +71,7 @@ export default {
     
     @media screen and (max-width: 650px) {
       margin: 120px 0 50px 0px ;
+      
     }
     
 
