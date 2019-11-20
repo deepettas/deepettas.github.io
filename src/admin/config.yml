@@ -7,16 +7,18 @@ media_folder: "src/assets/images"
 public_folder: "static/images"
 
 collections:
-  - name: "blogs"
-    label: "Blogs"
-    folder: "blog"
+  - name: "about"
+    label: "About"
+    folder: "content/about"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "index", name: "index", widget: "integer" }
+      - { label: "published", name: "published", default: true, widget: "select", options: [true, false]}
       - { label: "title", name: "title", widget: "string" }
       - { label: "date", name: "date", widget: "date" }
-      - { label: "slug", name: "slug", widget: "string" }
-      - { label: "body", name: "body", widget: "markdown" }
+      - { label: "section", name: "section", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
 
   # - name: "data"
   #   label: "Data"
