@@ -1,11 +1,11 @@
 ---
 index: 1
+published: false
 title: about_contents_1
-date: 2019-01-07
-published: true
-tags: ['Markdown', 'Cover Image']
-
+date: 2019-01-07T00:00:00.000Z
 section: subject space
-description: The zero-dimentional point of reference for this space is Curiocity. The rest is mathematics.
-
+description: >-
+  The zero-dimentional point of reference for this space is Curiocity. The rest
+  is mathematics.
 ---
+
