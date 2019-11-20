@@ -1,18 +1,35 @@
 backend:
   name: github
+  branch: blog
   repo: deepettas/deepettas.github.io
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "src/assets/images"
+public_folder: "static/images"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
+  - name: "blogs"
+    label: "Blogs"
+    folder: "blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "date" }
+      - { label: "slug", name: "slug", widget: "string" }
+      - { label: "body", name: "body", widget: "markdown" }
+
+  # - name: "data"
+  #   label: "Data"
+  #   files:
+  #     - name: "about"
+  #       label: "About"
+  #       file: "src/data/About.yml"
+  #       fields:
+  #         - { label: "Title", name: "title", widget: "string", default: "About" }
+  #         - name: "items"
+  #           label: "Items"
+  #           widget: "list"
+  #           fields:
+  #             - { label: "Title", name: "title", widget: "string" }
+  #             - { label: "Description", name: "description", widget: "text" }
+
