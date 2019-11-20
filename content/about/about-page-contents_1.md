@@ -1,6 +1,6 @@
 ---
 index: 1
-published: false
+published: true
 title: about_contents_1
 date: 2019-01-07T00:00:00.000Z
 section: subject space
