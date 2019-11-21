@@ -4,9 +4,9 @@
     <Author :show-title="true" /> -->
     
     <!-- List posts -->
-    <!-- <div class="posts">
+    <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div> -->
+    </div>
     
     <div class="flex-container">
       <p >
@@ -34,7 +34,6 @@ query {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
-        cover_image (width: 770, height: 380, blur: 10)
         path
         tags {
           id

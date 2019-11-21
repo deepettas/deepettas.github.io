@@ -1,16 +1,16 @@
 <template>
   <Layout>
 
-    <h2 class="post__title"> about this space </h2>
+    <h2 class="entry__title"> about this space </h2>
     
     <div class="flex-container">
     
       <!-- List about -->
-      <div class="about_container  post__content">
+      <div style="flex: 4 ;">
         <AboutSection v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
 
-      <div >
+      <div style="flex: 1">
         <Sidemenu/> 
       </div>
        
@@ -52,40 +52,3 @@ export default {
 
 
 
-<style lang="scss">
-.about_container{
-  width: 42%;
-  @media screen and (max-width: 650px) {
-      width: 100%;
-      padding-right: 10px;
-
-    }
-}
-.post {
-  margin: 120px 0 50px 120px;
-  
-
-  &__title {
-    justify-content: center;
-    margin: 120px 0 0px 120px;
-    
-    @media screen and (max-width: 650px) {
-      margin: 120px 0 0px 0px ;
-      
-    }
-    
-
-  
-  }
-  &__content{
-    margin: 120px 0 50px 120px;
-
-    @media screen and (max-width: 650px) {
-      margin: 120px 0 50px 0px ;
-    }
-  }  
-  
-  
- 
-}
-</style>
