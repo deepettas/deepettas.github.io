@@ -1,21 +1,23 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout :show-logo="true">
     <!-- Author intro
     <Author :show-title="true" /> -->
     
     <!-- List posts -->
-    <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
+    
     
     <div class="flex-container">
-      <p >
+      <p style="flex 3" >
         This is my space
       </p>
 
-      <div >
+      <div style="flex 1">
         <Sidemenu/> 
       </div>      
+      
+    </div>
+    <div class="posts">
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 <!-- 
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>

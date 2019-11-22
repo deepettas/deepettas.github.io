@@ -4,7 +4,13 @@
       <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
     </div>
     <div class="post-card__content">
-      <h2 class="post-card__title" v-html="post.title" />
+      <div>
+        <h3 style= "float:left; margin-right: 10px" class="post-card__title" v-html="post.display_index" />
+        <h3  style= "float:left; margin-right: 10px" class="post-card__title" >-</h3>
+
+        <h3  class="post-card__title" v-html="post.title" />
+
+      </div>
       <p class="post-card__description" v-html="post.description" />
 
       <PostMeta class="post-card__meta" :post="post" />

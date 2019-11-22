@@ -39,12 +39,12 @@ export default {
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost(filter: { published: { eq: true }} ,order: ASC, sortBy: "index") {
     edges {
       node {
         id
         title
-        index
+        display_index
         date (format: "D. MMMM YYYY")
         timeToRead
         description
