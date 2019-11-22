@@ -4,8 +4,9 @@
 			<g-link class="link" to='/'> subpixel space </g-link>
         	<g-link class="link" to='/about/'> about this space </g-link>
         	<g-link class="link" to='/entries/'> all neural outputs </g-link>
-			<p>   </p>
+			<p class="spacer">   </p>
 			<g-link class="link" to='/self/'> Dionisis Pettas </g-link>
+			
 
 	</div>
 </template>
@@ -16,11 +17,9 @@
 	display: flex;
 	flex-direction: column;
     margin-left: auto;
-
 	text-align: right;
 	width: 200px;
     position: relative;
-    margin-top: 75px;
     right: 0px;
     margin-right: 6.25%;
     z-index: 10;
@@ -50,4 +49,11 @@
 		margin-bottom: 10px;
     }
 }
+.spacer {
+	margin-bottom: 77px;
+	@media screen and (max-width: 650px) {
+		margin-bottom: 0px;
+    }
+}
+
 </style>
