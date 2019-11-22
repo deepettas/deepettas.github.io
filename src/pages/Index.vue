@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="true" :show-about="false" :show-entries="false">
+  <Layout :show-logo="false" :show-about="false" :show-entries="false">
     <!-- Author intro
     <Author :show-title="true" /> -->
     
@@ -8,7 +8,6 @@
     
     <div class="flex-container">
       <p style="flex 3" >
-        This is my space
       </p>
 
       <div style="flex 1">
