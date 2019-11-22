@@ -5,11 +5,11 @@ html {
 
 // Light default theme
 body {
- 	--bg-color: #FEF9F9;
+ 	--bg-color: #FCFCFC;
  	--bg-content-color: #fff;
  	--bg-code: #fffbf3;
  	--body-color: #444;
- 	--title-color: #111;
+ 	--title-color: #050505;
  	--link-color: #505050;
  	--border-color:  rgba(0,0,0,.1);
   --space: 3.5rem;
@@ -27,7 +27,7 @@ body[data-theme="dark"] {
 	--bg-content-color: #202020;
 	--bg-code: rgba(0,0,0,.3);
 	--border-color:  rgba(255,255,255,.1);
-	--body-color: #FEF9F9;
+	--body-color: #FCFCFC;
 	--title-color: #fff;
 	--link-color: #505050;
 	--hide-light: inherit;
