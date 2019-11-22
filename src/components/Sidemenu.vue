@@ -1,11 +1,11 @@
 <template>
 
 	<div class="side-menu">
-			<g-link class="link" to='/'> subpixel space </g-link>
-        	<g-link class="link" to='/about/'> about this space </g-link>
+			<g-link class="link" to='/'> subneural space </g-link>
+        	<g-link class="link" to='/about/'> regarding this space </g-link>
         	<g-link class="link" to='/entries/'> all neural outputs </g-link>
 			<p class="spacer">   </p>
-			<g-link class="link" to='/self/'> Dionisis Pettas </g-link>
+			<g-link class="link" to='https://dpettas.com/'> Dionisis Pettas </g-link>
 			
 
 	</div>
