@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="true" :show-about="false" :show-entries="true">
+  <Layout :show-logo="true" :show-about="true" :show-entries="false">
     <!-- Author intro
     <Author :show-title="true" />
      -->
@@ -39,7 +39,7 @@ export default {
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }} ,order: ASC, sortBy: "index") {
+  posts: allPost(filter: { published: { eq: true }} ,order: DESC, sortBy: "index") {
     edges {
       node {
         id
