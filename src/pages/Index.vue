@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="true">
+  <Layout :show-logo="true" :show-about="false" :show-entries="false">
     <!-- Author intro
     <Author :show-title="true" /> -->
     
@@ -16,9 +16,9 @@
       </div>      
       
     </div>
-    <div class="posts">
+    <!-- <div class="posts">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
+    </div> -->
 <!-- 
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>
     <g-link class= "entries_link" to="/self/"> Check me out</g-link> -->

@@ -6,7 +6,11 @@
         <Logo v-if="showLogo" /> 
       </div>
       <div class="header__right">
-        <ToggleTheme />
+
+        <g-link v-if="showEntries" class="link"  to='/entries/'> entries </g-link>
+        <g-link v-if="showAbout" class="link" to='/about/'> about </g-link>
+
+        <ToggleTheme  style="margin-bottom: 5px"/>
       </div>
     </header>
 
@@ -26,7 +30,9 @@ import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 export default {
   props: {
-    showLogo: { default: true }
+    showLogo: { default: true },
+    showAbout: {default: true},
+    showEntries: {default: true}
   },
   components: {
     Logo,

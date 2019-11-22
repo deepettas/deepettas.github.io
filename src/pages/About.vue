@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout  :show-entries="true">
 
     <h2 class="entry__title"> about this space </h2>
     
