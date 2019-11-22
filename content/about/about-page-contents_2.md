@@ -1,5 +1,5 @@
 ---
-index: 2
+index: 002
 title: about_contents_2
 date: 2019-01-07
 published: true

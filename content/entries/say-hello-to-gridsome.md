@@ -1,4 +1,6 @@
 ---
+index: 003
+display_index: '003'
 title: Say hello to Gridsome 🎉
 date: 2019-02-07
 tags: ['Markdown', 'Releases']

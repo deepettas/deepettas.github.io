@@ -1,4 +1,6 @@
 ---
+index: 002
+display_index: '002'
 title: Markdown test file
 date: 2019-02-06
 published: true

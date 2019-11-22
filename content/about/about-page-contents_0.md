@@ -1,5 +1,6 @@
 ---
-index: 0
+index: 000
+display_index: '000'
 published: true
 title: about_contents_0
 date: 2019-01-07T00:00:00.000Z

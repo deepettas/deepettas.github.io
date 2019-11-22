@@ -1,5 +1,6 @@
 ---
-index: 0
+index: 001
+display_index: '001'
 published: true
 date: 2019-01-07T00:00:00.000Z
 title: A post with a cover image
