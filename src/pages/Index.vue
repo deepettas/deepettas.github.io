@@ -5,19 +5,23 @@
     
     <!-- List posts -->
     
+    <div class="flex-container" style="height: 50em">
     
-    <div class="flex-container">
-      <p style="flex 3" >
-      </p>
+      <div style= "flex: 5">
+        <CuriosityLense/>
+        <!-- <div v-for="index in 5" :key="index">
+          <Lexis v-for="lexis in words" :key="lexis" :lexis="lexis"/>
+        </div> -->
 
-      <div style="flex 1">
+        
+      </div>
+
+      <div style="flex: 1">
         <Sidemenu/> 
       </div>      
       
     </div>
-    <!-- <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div> -->
+    
 <!-- 
     <g-link class= "entries_link" to="/entries/">Enter the space</g-link>
     <g-link class= "entries_link" to="/self/"> Check me out</g-link> -->
@@ -50,13 +54,30 @@ query {
 <script>
 import PostCard from '~/components/PostCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
+import Lexis from '~/components/Lexis.vue'
+import LightPanel from '~/components/LightPanel.vue'
+import CuriosityLense from '~/components/CuriosityLense.vue'
+import Lexis_words from '~/data/lexis.json';
+
 export default {
   components: {
     PostCard,
-    Sidemenu
+    Sidemenu,
+    Lexis,
+    LightPanel,
+    CuriosityLense,
+
   },
   metaInfo: {
     title: 'Portal'
+  },
+  data() {
+  return {
+    words: Lexis_words
+  }
+  },
+  mounted() {
+    console.log(Lexis_words)
   }
 }
 </script>
