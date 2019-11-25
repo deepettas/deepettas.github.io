@@ -21,7 +21,6 @@ export default {
 $white: #fff;
 .lexis {
     position: absolute;
-    z-index: 999;
     background: transparent;
     user-select: none;
 
