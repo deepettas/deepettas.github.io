@@ -33,6 +33,8 @@ query {
 		width: 27px;
 		margin-right: .9em;
 		display: var(--hide-dark);
+  		transition: display .6s;
+
 		
   };
 	&__image_light {
@@ -42,6 +44,8 @@ query {
 		width: 27px;
 		margin-right: .9em;
 		display: var(--hide-light);
+  		transition: display .6s;
+
 
 		
 	}

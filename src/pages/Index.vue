@@ -8,9 +8,8 @@
     <div class="flex-container" style="height: 50em">
     
       <div style= "flex: 5">
-
         <CuriosityLense/>
-        
+        <WhiteArt/>
 
       </div>
 
@@ -53,19 +52,20 @@ query {
 import PostCard from '~/components/PostCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
 import CuriosityLense from '~/components/CuriosityLense.vue'
+import WhiteArt from '~/components/WhiteArt.vue'
 
 export default {
   components: {
     PostCard,
     Sidemenu,
     CuriosityLense,
+    WhiteArt
   },
   metaInfo: {
     title: 'Portal'
   },
   
   mounted() {
-    console.log(Lexis_words)
   }
 }
 </script>

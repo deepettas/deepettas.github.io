@@ -1,20 +1,17 @@
 <template>
 
-  <div class="  position: absolute;">
+  <div >
     <g-image
         alt="Logo image"
-        class="logo__image_dark logo_back"
-        src="~/assets/images/Logo_black.png"
+        class="logo_background logo_background__image_dark"
+        src="~/assets/images/Logo_words_black.png"
       />
       <g-image
         alt="Logo image"
-        class="logo__image_light logo_back"
-        src="~/assets/images/Logo_white.png"
+        class="logo_background logo_background__image_light"
+        src="~/assets/images/Logo_words_white.png"
       />
-
-      <!-- <div v-for="index in 5" :key="index">
-          <Lexis v-for="lexis in words" :key="lexis" :lexis="lexis"/>
-        </div> -->
+      
   </div>
 
 </template>
@@ -39,15 +36,28 @@ data() {
 
 
 <style lang="scss">
-
-.logo_back {
+.logo_background {
+  
   position: absolute;
   top: 42%;
-  left: 50%;
-  transform: translate(-42%, -50%);
+  left: 46%;
+  transform: translate(-42%, -46%);
 
-  height: 100px;
+  height: 200px;
   width: auto;
+  &__image_dark {
+		display: var(--hide-dark);
+  };
+
+	&__image_light {
+    display: var(--hide-light);
+    z-index: 999;
+
+	}
+  
 }
+
+
+
 
 </style>

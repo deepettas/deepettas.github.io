@@ -10,7 +10,7 @@
         <g-link v-if="showEntries" class="link"  to='/entries/'> entries </g-link>
         <g-link v-if="showAbout" class="link" to='/about/'> about </g-link>
 
-        <ToggleTheme  style="margin-bottom: 5px"/>
+        <ToggleTheme  style="z-index:999; margin-bottom: 5px"/>
       </div>
     </header>
 

@@ -117,6 +117,11 @@ h1,
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
+  display: var(--hide-dark);
+  @media screen and (max-width: 650px) {
+      display: none;
+    }
 }
 .blend-multiply {
   mix-blend-mode: multiply;
@@ -129,7 +134,7 @@ h1,
   background-color: var(--bg-color);
 }
 .animated-bg {
-//   background-image: url("http://hmongouachon.com/assets/gif/timelapse.gif");
+  background-image: url("http://hmongouachon.com/assets/gif/timelapse.gif");
   background-color: #fff;
   background-position: center;
   -moz-background-size: cover;
@@ -140,7 +145,7 @@ h1,
 }
 .element-mask {
   background-color: #fff;
-  opacity: 0.5;
+  // opacity: 0.5;
 }
 
 .circle-follow {
