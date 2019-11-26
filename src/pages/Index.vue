@@ -5,9 +5,9 @@
     
     <!-- List posts -->
     
-    <div class="flex-container" style="height: 50em">
+    <div class="flex-container" style="overflow: hidden; height: 100%">
     
-      <div style= "flex: 5">
+      <div style= "flex: 5 ;">
         <CuriosityLense/>
         <WhiteArt/>
 

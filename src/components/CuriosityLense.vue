@@ -79,6 +79,7 @@ export default {
 
 
 <style lang="scss">
+
 // @import url(https://fonts.googleapis.com/css?family=Roboto:400, 900);
 // body,
 // html {
@@ -96,7 +97,6 @@ export default {
   bottom: 15%;
   text-align: center;
 }
-h1,
 // p,
 // a {
 //   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -112,6 +112,7 @@ h1,
 // }
 
 .full-size {
+  overflow: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -119,6 +120,8 @@ h1,
   left: 0;
   z-index: 0;
   display: var(--hide-dark);
+  transition: color .6s, background-color .6s display .6s;
+
   @media screen and (max-width: 650px) {
       display: none;
     }
@@ -134,17 +137,21 @@ h1,
   background-color: var(--bg-color);
 }
 .animated-bg {
-  background-image: url("http://hmongouachon.com/assets/gif/timelapse.gif");
+  // background-image: url("http://hmongouachon.com/assets/gif/timelapse.gif");
   background-color: #fff;
   background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+
+  
   
 }
 .element-mask {
   background-color: #fff;
+  transition: color .6s, background-color .6s display .6s;
+
   // opacity: 0.5;
 }
 
@@ -171,6 +178,7 @@ h1,
 _:-ms-fullscreen,
 :root .letter-mask {
   background-color: transparent;
+  
 }
 _:-ms-fullscreen,
 :root .animated-bg {

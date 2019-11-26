@@ -2,8 +2,8 @@
   <div class="position: absolute;">
     <g-image
       alt="Logo image"
-      class="logo_background logo_background__image_light"
-      src="~/assets/images/Logo_words_white.png"
+      class="white_art white_art__image_light"
+      src="~/assets/images/Logo_white.png"
     />
   </div>
 </template>
@@ -23,14 +23,13 @@ export default {
 
 
 <style lang="scss">
-.logo_background {
+.white_art {
   position: absolute;
   top: 42%;
-  left: 46%;
+  left: 50%;
   transform: translate(-42%, -46%);
 
-  max-height: 200px;
-  height: 20%;
+  height: 13vh;
   width: auto;
   &__image_light {
     display: var(--hide-light);

@@ -4,14 +4,9 @@
     <g-image
         alt="Logo image"
         class="logo_background logo_background__image_dark"
-        src="~/assets/images/Logo_words_black.png"
+        src="~/assets/images/Logo_black.png"
       />
-      <g-image
-        alt="Logo image"
-        class="logo_background logo_background__image_light"
-        src="~/assets/images/Logo_words_white.png"
-      />
-      
+  
   </div>
 
 </template>
@@ -40,10 +35,10 @@ data() {
   
   position: absolute;
   top: 42%;
-  left: 46%;
-  transform: translate(-42%, -46%);
+  left: 50%;
+  transform: translate(-42%, -50%);
 
-  height: 200px;
+  height: 13vh;
   width: auto;
   &__image_dark {
 		display: var(--hide-dark);
