@@ -1,19 +1,21 @@
 <template>
 	<div class="author">
 
-		<g-image alt="Author image" class="author__image" src="~/favicon.png"  blur="5" />
-
+		<!-- <g-image alt="Author image" class="author__image" src="~/favicon.png"  blur="5" /> -->
+        <g-image alt="Logo image" class="author__image" style="display: var(--hide-dark)" src="~/assets/images/Logo_black.png" />
+		<g-image alt="Logo image" class="author__image" style="display: var(--hide-light)" src="~/assets/images/Logo_white.png" />
+	
 		<h1 v-if="showTitle" class="author__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
 
 		<p class="author__intro">
-			A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+			Spiral in. Spiral out.
 		</p>
 
 		<p class="author__links">
-			<a href="//twitter.com/gridsome">Follow on Twitter</a>
-			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>
+			<a href="//twitter.com/deepettas">Follow on Twitter</a>
+			<a href="//github.com/deepettas">GitHub</a>
 		</p>
 
 	</div>
@@ -28,8 +30,13 @@ query {
 </static-query>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
-	props: ['showTitle']
+	props: ['showTitle'],
+	components: {
+	Logo
+	}
 }
 </script>
 
@@ -46,6 +53,7 @@ export default {
 		height: 90px;
 		margin-bottom: 1em;
 		object-fit: scale-down;
+		
 	}
 
 	&__intro {
