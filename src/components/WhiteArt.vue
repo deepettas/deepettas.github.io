@@ -7,7 +7,7 @@
     />
     <g-image
       alt="Logo image"
-      class="white_art white_art__image_light mid hover"
+      class="white_art white_art__image_light mid"
       src="~/assets/images/wt_mid.png"
     />
     <g-image
@@ -15,11 +15,14 @@
       class="white_art white_art__image_light top hover"
       src="~/assets/images/wt_top.png"
     />
-  <g-image
+
+
+  <!-- <g-image
       alt="Logo image"
       class="white_art white_art__image_light"
       src="~/assets/images/Logo_white.png"
-      />
+      /> -->
+
   </div>
 </template>
 
@@ -62,42 +65,42 @@ $shadowColour: rgba(0, 0, 0, .6);
 .white_art {
   top: 10%;
   left: 42%;
-  transform: translate(-42%, -46%);
-
+//   transform: translate(-42%, -46%);
+  user-select: none;
   height: 13vh;
   width: auto;
+  display: var(--hide-light);
+
   &__image_light {
-    display: var(--hide-light);
-    // @media screen and (max-width: 650px) {
-    //   display: none;
-    // }
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
   }
+
 		
 }
 
 .base{
   position: absolute;
-    top: 42%;
+    top: 40.5%;
 
 }
 .mid{
   z-index: 3;
-  top: 40.5%;
+  top: 40%;
   position:absolute;
 }
 .top{
   z-index: 4;
-  top: 39%;
+  top: 39.5%;
   position: absolute;
 }
 div.logo_hover{
-  display: inline-block;
   width:100%;
-  position: absolute;
 }
-// Todo: find a way to do both
-div.logo_hover:hover .top{
-    transform: translateY(-10px);
+
+div.logo_hover:hover .top {
+    	transform: translateY(-10px);
 		animation-name: hover;
 		animation-duration: 1.5s;
 		animation-delay: $defaultDuration;
@@ -106,8 +109,8 @@ div.logo_hover:hover .top{
 		animation-direction: alternate;
     
 }
-div.logo_hover:hover .bot{
-    transform: translateY(10px);
+div.logo_hover:hover .base {
+    	transform: translateY(+10px);
 		animation-name: hang;
 		animation-duration: 1.5s;
 		animation-delay: $defaultDuration;
@@ -128,7 +131,7 @@ div.logo_hover:hover .bot{
 	}
 }
 .hover {
-	display: inline-block;
+	// display: inline-block;
 	transition-duration: .5s;
 	transition-property: transform;
 
@@ -161,7 +164,7 @@ div.logo_hover:hover .bot{
 }
 
 .hang {
-	display: inline-block;
+	// display: inline-block;
 	transition-duration: .5s;
 	transition-property: transform;
 

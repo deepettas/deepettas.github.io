@@ -32,7 +32,6 @@ data() {
 
 <style lang="scss">
 .logo_background {
-  
   position: absolute;
   top: 42%;
   left: 50%;
@@ -40,6 +39,7 @@ data() {
 
   height: 13vh;
   width: auto;
+  
   &__image_dark {
 		display: var(--hide-dark);
   };

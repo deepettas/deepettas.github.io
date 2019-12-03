@@ -14,6 +14,7 @@
 
 <style lang="scss">
 .side-menu{
+	user-select: none;
 	display: flex;
 	flex-direction: column;
     margin-left: auto;
