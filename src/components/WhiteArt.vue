@@ -73,7 +73,7 @@ $shadowColour: rgba(0, 0, 0, .6);
 
   &__image_light {
     @media screen and (max-width: 650px) {
-      display: none;
+      display:none;
     }
   }
 

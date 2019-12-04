@@ -1,13 +1,11 @@
 <template>
 
 	<div class="side-menu">
-			<g-link class="link" to='/'> subneural space </g-link>
-        	<g-link class="link" to='/about/'> regarding this space </g-link>
-        	<g-link class="link" to='/entries/'> all neural outputs </g-link>
+			<router-link class="link" to='/'> subneural space </router-link>
+        	<router-link class="link" to='/about/'> regarding this space </router-link>
+        	<router-link class="link" to='/entries/'> all neural outputs </router-link>
 			<p class="spacer">   </p>
-			<g-link class="link" to='https://dpettas.com/'> Dionisis Pettas </g-link>
-			
-
+			<router-link class="link" to='https://dpettas.com/'> Dionisis Pettas </router-link>
 	</div>
 </template>
 
@@ -32,6 +30,7 @@
     }
 
 }
+
 .link {
 	
 	text-decoration: none;
@@ -49,7 +48,9 @@
 	@media screen and (max-width: 650px) {
 		margin-bottom: 10px;
     }
+	
 }
+
 .spacer {
 	margin-bottom: 77px;
 	@media screen and (max-width: 650px) {
