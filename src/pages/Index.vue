@@ -5,19 +5,18 @@
     
     <!-- List posts -->
     
-    <div class="back-container" style=" height: 100%">
+    <div class="flex-container" style=" height: 100%">
     
-      <CuriosityLense/>
-      <WhiteArt/>
-    </div>
-    <div class="flex-container" >
-      <div style="flex: 4 ;">
-        <!-- TODO: ADD mobile logo -->
+      <div style= "flex: 5">
+        <CuriosityLense/>
+        <WhiteArt/>
+
       </div>
 
       <div style="flex: 1">
         <Sidemenu/> 
       </div>      
+      
     </div>
     
 <!-- 

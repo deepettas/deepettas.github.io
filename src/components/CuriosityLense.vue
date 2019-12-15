@@ -137,7 +137,7 @@ export default {
   background-color: var(--bg-color);
 }
 .animated-bg {
-  // background-image: url("http://hmongouachon.com/assets/gif/timelapse.gif");
+  background-image: url('../assets/gifs/mont-blanc-light.gif');
   background-color: #fff;
   background-position: center;
   -moz-background-size: cover;
