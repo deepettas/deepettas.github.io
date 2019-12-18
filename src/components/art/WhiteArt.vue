@@ -2,17 +2,17 @@
   <div class="logo_hover">
     <g-image
       alt="Logo image"
-      class="white_art white_art__image_light base hang"
+      class="white_art  base hang"
       src="~/assets/images/wt_base.png"
     />
     <g-image
       alt="Logo image"
-      class="white_art white_art__image_light mid"
+      class="white_art  mid"
       src="~/assets/images/wt_mid.png"
     />
     <g-image
       alt="Logo image"
-      class="white_art white_art__image_light top hover"
+      class="white_art  top hover"
       src="~/assets/images/wt_top.png"
     />
 
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Lexis from "~/components/Lexis.vue";
+import Lexis from "~/components/art/Lexis.vue";
 
 export default {
   components: {
@@ -63,21 +63,21 @@ $shadowColour: rgba(0, 0, 0, .6);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .white_art {
-  top: 10%;
-  left: 42%;
-//   transform: translate(-42%, -46%);
+  left: 50%;
+  margin-left: -(8vw);
   user-select: none;
-  height: 13vh;
-  width: auto;
+  width: 16vw;
+  height: auto;
   display: var(--hide-light);
 
-  &__image_light {
-    @media screen and (max-width: 650px) {
-      display:none;
-    }
-  }
-
+	@media screen and (max-width: 650px) {
 		
+		width: 12vh;
+		margin-left: -(6vh);
+		margin-top: -(10vh);
+
+	}
+
 }
 
 .base{

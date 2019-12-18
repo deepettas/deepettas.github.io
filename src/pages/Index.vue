@@ -1,9 +1,6 @@
 <template>
   <Layout :show-logo="false" :show-about="false" :show-entries="false">
-    <!-- Author intro
-    <Author :show-title="true" /> -->
-    
-    <!-- List posts -->
+
     
     <div class="flex-container" style=" height: 100%">
     
@@ -49,10 +46,10 @@ query {
 </page-query>
 
 <script>
-import PostCard from '~/components/PostCard.vue'
+import PostCard from '~/components/content/PostCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
-import CuriosityLense from '~/components/CuriosityLense.vue'
-import WhiteArt from '~/components/WhiteArt.vue'
+import CuriosityLense from '~/components/art/CuriosityLense.vue'
+import WhiteArt from '~/components/art/WhiteArt.vue'
 
 export default {
   components: {

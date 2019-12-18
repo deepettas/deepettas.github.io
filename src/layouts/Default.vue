@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/art/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 export default {
   props: {
@@ -53,7 +53,7 @@ export default {
   top:0;
   z-index: 10;
 
-  font-size: .7em;
+  font-size: .8em;
   // font-family: HelveticaNowText-Medium;
   &__left,
   &__right {

@@ -31,7 +31,7 @@
 
 
 <script>
-import BackgroundArt from '~/components/BackgroundArt.vue'
+import BackgroundArt from '~/components/art/BackgroundArt.vue'
 
 export default {
     components: {
@@ -137,7 +137,7 @@ export default {
   background-color: var(--bg-color);
 }
 .animated-bg {
-  background-image: url('../assets/gifs/mont-blanc-light.gif');
+  background-image: url('../../assets/gifs/mont-blanc-light.gif');
   background-color: #fff;
   background-position: center;
   -moz-background-size: cover;

@@ -25,18 +25,18 @@
       <!-- Add comment widgets here -->
     </div>
 
-    <Author class="post-author" />
+    <Signature class="post-signature" />
   </Layout>
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from '~/components/content/PostMeta'
+import PostTags from '~/components/content/PostTags'
+import Signature from '~/components/Signature.vue'
 
 export default {
   components: {
-    Author,
+    Signature,
     PostMeta,
     PostTags
   },
@@ -124,7 +124,7 @@ query Post ($id: ID!) {
   }
 }
 
-.post-author {
+.post-signature {
   margin-top: calc(var(--space) / 2);
 }
 </style>

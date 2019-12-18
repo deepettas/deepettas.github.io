@@ -1,12 +1,6 @@
 <template>
   <Layout :show-logo="true" :show-about="true" :show-entries="false">
-    <!-- Author intro
-    <Author :show-title="true" />
-     -->
-    <!-- List posts -->
-    <!-- <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div> -->
+  
       <h2 class="entry__title"> all neural outputs </h2>
 
       <div class="flex-container">
@@ -24,7 +18,7 @@
 
 
 <script>
-import EntryCard from '~/components/EntryCard.vue'
+import EntryCard from '~/components/content/EntryCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
 export default {
   components: {

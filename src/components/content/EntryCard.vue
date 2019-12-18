@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
+import PostMeta from '~/components/content/PostMeta'
+import PostTags from '~/components/content/PostTags'
 
 export default {
   components: {

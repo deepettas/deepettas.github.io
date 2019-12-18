@@ -10,7 +10,7 @@ collections:
 
   - name: "post"
     label: "Post"
-    folder: "content/entries"
+    folder: "TheVault/entries"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -24,7 +24,7 @@ collections:
 
   - name: "about"
     label: "About"
-    folder: "content/about"
+    folder: "TheVault/about"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

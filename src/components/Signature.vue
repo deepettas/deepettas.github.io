@@ -1,19 +1,18 @@
 <template>
-	<div class="author">
+	<div class="signature">
 
-		<!-- <g-image alt="Author image" class="author__image" src="~/favicon.png"  blur="5" /> -->
-        <g-image alt="Logo image" class="author__image" style="display: var(--hide-dark)" src="~/assets/images/Logo_black.png" />
-		<g-image alt="Logo image" class="author__image" style="display: var(--hide-light)" src="~/assets/images/Logo_white.png" />
+        <g-image alt="Logo image" class="signature__image" style="display: var(--hide-dark)" src="~/assets/images/Logo_black.png" />
+		<g-image alt="Logo image" class="signature__image" style="display: var(--hide-light)" src="~/assets/images/Logo_white.png" />
 	
-		<h1 v-if="showTitle" class="author__site-title">
+		<h1 v-if="showTitle" class="signature__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
 
-		<p class="author__intro">
+		<p class="signature__intro">
 			Spiral in. Spiral out.
 		</p>
 
-		<p class="author__links">
+		<p class="signature__links">
 			<a href="//twitter.com/deepettas">Follow on Twitter</a>
 			<a href="//github.com/deepettas">GitHub</a>
 		</p>
@@ -30,7 +29,7 @@ query {
 </static-query>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/art/Logo.vue'
 
 export default {
 	props: ['showTitle'],
@@ -41,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss">
-.author {
+.signature {
 	margin: 0 auto;
 	max-width: 500px;
 	text-align: center;

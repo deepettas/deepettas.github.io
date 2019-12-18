@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Lexis from '~/components/Lexis.vue'
-import Lexis_words from '~/data/lexis.json';
+import Lexis from '~/components/art/Lexis.vue'
+import Lexis_words from '~/../TheVault/json/lexis.json';
 
 export default {
 components:{

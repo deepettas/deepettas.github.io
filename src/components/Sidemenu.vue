@@ -31,6 +31,10 @@
 
 }
 
+.router-link-exact-active {
+	opacity: .5;
+}
+
 .link {
 	
 	text-decoration: none;
