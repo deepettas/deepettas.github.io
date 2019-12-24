@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: blog
+  branch: dev
   repo: deepettas/deepettas.github.io
 
 media_folder: "src/assets/images"
@@ -19,8 +19,12 @@ collections:
       - { label: "published", name: "published", widget: "boolean", default: true}
       - { label: "date", name: "date", widget: "datetime" }
       - { label: "Post title", name: "title", widget: "string" }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Post content', name: 'body', widget: 'markdown' }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        options: ["Existential", "Futurism", "Technology"]
+        multiple: true
 
   - name: "about"
     label: "About"
@@ -34,4 +38,3 @@ collections:
       - { label: "date", name: "date", widget: "datetime" }
       - { label: "section", name: "section", widget: "string" }
       - { label: "description", name: "description", widget: "text" }
-
