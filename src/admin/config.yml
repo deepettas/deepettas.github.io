@@ -19,12 +19,13 @@ collections:
       - { label: "published", name: "published", widget: "boolean", default: true}
       - { label: "date", name: "date", widget: "datetime" }
       - { label: "Post title", name: "title", widget: "string" }
-      - { label: 'Post content', name: 'body', widget: 'markdown' }
       - label: "Tags"
         name: "tags"
         widget: "select"
         options: ["Existential", "Futurism", "Technology"]
         multiple: true
+      - { label: 'Post content', name: 'body', widget: 'markdown' }
+      
 
   - name: "about"
     label: "About"

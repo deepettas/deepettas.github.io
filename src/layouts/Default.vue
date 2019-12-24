@@ -13,10 +13,12 @@
         <ToggleTheme  style="z-index:999; margin-bottom: 5px"/>
       </div>
     </header>
+    <transition name="fade" appear>
 
     <main class="main">
       <slot/>
     </main>
+    </transition>
 
     <footer class="footer">
       
@@ -42,6 +44,13 @@ export default {
 </script>
 
 <style lang="scss">
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
 .header {
   display: flex;
   justify-content: space-between;

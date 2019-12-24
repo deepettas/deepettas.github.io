@@ -46,14 +46,12 @@ query {
 </page-query>
 
 <script>
-import PostCard from '~/components/content/PostCard.vue'
 import Sidemenu from '~/components/Sidemenu.vue'
 import CuriosityLense from '~/components/art/CuriosityLense.vue'
 import WhiteArt from '~/components/art/WhiteArt.vue'
 
 export default {
   components: {
-    PostCard,
     Sidemenu,
     CuriosityLense,
     WhiteArt

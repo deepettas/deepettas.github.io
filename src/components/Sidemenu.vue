@@ -5,7 +5,7 @@
         	<router-link class="link" to='/about/'> regarding this space </router-link>
         	<router-link class="link" to='/entries/'> all neural outputs </router-link>
 			<p class="spacer">   </p>
-			<router-link class="link" to='https://dpettas.com/'> Dionisis Pettas </router-link>
+			<g-link class="link" to='https://dpettas.com/'> Dionisis Pettas </g-link>
 	</div>
 </template>
 

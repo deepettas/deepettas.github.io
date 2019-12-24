@@ -8,7 +8,8 @@
 
 body {
 	background-color: var(--bg-color);
-	
+	transition: 1s;
+
 	color: var(--body-color);
 	transition: color .6s, background-color .6s;
 	margin:0;

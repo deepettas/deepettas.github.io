@@ -9,34 +9,26 @@
       <!-- This div handle the background element (could be an image, a video or in that case a gif) -->
       <div class="animated-bg full-size"></div>
       <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background -->
-       <BackgroundArt/>
- 
+      <BackgroundArt />
+
       <div class="blend-screen element-mask full-size">
         <!-- This span display the masked element-->
         <span id="circle" class="circle-follow"></span>
-  
       </div>
     </div>
   </div>
 
-  <!-- <div class="notice">
-    <h1>Move your mouse !</h1>
-    <p>
-      This is an attempt to recreate the effect of the homepage of
-      <a href="http://nurturedigital.com/">nurturedigital</a>
-    </p>
-  </div>-->
 </template>
 
 
 
 <script>
-import BackgroundArt from '~/components/art/BackgroundArt.vue'
+import BackgroundArt from "~/components/art/BackgroundArt.vue";
 
 export default {
-    components: {
-        BackgroundArt
-    },
+  components: {
+    BackgroundArt
+  },
   mounted() {
     // set the variables
     var timer;
@@ -79,16 +71,6 @@ export default {
 
 
 <style lang="scss">
-
-// @import url(https://fonts.googleapis.com/css?family=Roboto:400, 900);
-// body,
-// html {
-//   position: relative;
-//   overflow: hidden;
-//   height: 100%;
-//   width: 100%;
-//   margin: 0;
-// }
 .notice {
   position: absolute;
   z-index: 10;
@@ -97,19 +79,6 @@ export default {
   bottom: 15%;
   text-align: center;
 }
-// p,
-// a {
-//   font-family: "Roboto", Arial, Helvetica, sans-serif;
-//   color: #fff;
-//   margin: 0;
-// }
-// h1 {
-//   text-transform: uppercase;
-//   font-size: 3em;
-// }
-// p {
-//   font-size: 1em;
-// }
 
 .full-size {
   overflow: hidden;
@@ -120,11 +89,12 @@ export default {
   left: 0;
   z-index: 0;
   display: var(--hide-dark);
-  transition: color .6s, background-color .6s display .6s;
+  transition: color 0.6s, background-color 0.6s display 0.6s;
+  transition: 1s;
 
   @media screen and (max-width: 650px) {
-      display: none;
-    }
+    display: none;
+  }
 }
 .blend-multiply {
   mix-blend-mode: multiply;
@@ -137,20 +107,17 @@ export default {
   background-color: var(--bg-color);
 }
 .animated-bg {
-  background-image: url('../../assets/gifs/mont-blanc-light.gif');
+  background-image: url("../../assets/gifs/mont-blanc-light.gif");
   background-color: #fff;
   background-position: center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-
-  
-  
 }
 .element-mask {
   background-color: #fff;
-  transition: color .6s, background-color .6s display .6s;
+  transition: color 0.6s, background-color 0.6s display 0.6s;
 
   // opacity: 0.5;
 }
@@ -178,7 +145,6 @@ export default {
 _:-ms-fullscreen,
 :root .letter-mask {
   background-color: transparent;
-  
 }
 _:-ms-fullscreen,
 :root .animated-bg {
