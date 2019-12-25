@@ -16,6 +16,7 @@ collections:
     fields:
       - { label: "index", name: "index", widget: "number" }
       - { label: "display_index", name: "display_index", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
       - { label: "published", name: "published", widget: "boolean", default: true}
       - { label: "date", name: "date", widget: "datetime" }
       - { label: "Post title", name: "title", widget: "string" }

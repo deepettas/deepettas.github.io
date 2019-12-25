@@ -14,6 +14,10 @@
       <div class="blend-screen element-mask full-size">
         <!-- This span display the masked element-->
         <span id="circle" class="circle-follow"></span>
+        <a href='about'>
+        <div class="div_link">
+        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -71,6 +75,21 @@ export default {
 
 
 <style lang="scss">
+.div_link{
+  z-index: 100;
+  // background-color:aquamarine;
+  top: 42%;
+  left: 50%;
+  transform: translate(-42%, -50%);
+  transition: 1s;
+  height: 15vh;
+  width: 15vw;
+  position: absolute;
+  cursor: pointer;
+
+
+}
+
 .notice {
   position: absolute;
   z-index: 10;

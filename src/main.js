@@ -7,13 +7,17 @@ import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, {appOptions, router, head, isClient }) {
+  head.script.push({src: '/hotjar.js'});
+  head.meta.push({
+    name: 'keywords',
+    content: 'dionisis,pettas,blog,subneural,space'
+  })
 
   router.options.linkActiveClass = 'is-active';
   Vue.use(Vuetify);
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  head.script.push({src: '/hotjar.js'});
 }
 

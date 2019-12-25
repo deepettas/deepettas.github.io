@@ -1,4 +1,5 @@
 <template>
+<a href='about'>
   <div class="logo_hover">
     <g-image alt="Logo image" class="white_art base hang" src="~/assets/images/wt_base.png" />
     <g-image alt="Logo image" class="white_art mid" src="~/assets/images/wt_mid.png" />
@@ -10,6 +11,7 @@
       src="~/assets/images/Logo_white.png"
     />-->
   </div>
+</a>
 </template>
 
 <script>

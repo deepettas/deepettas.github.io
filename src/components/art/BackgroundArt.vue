@@ -2,8 +2,9 @@
   <div>
     <g-image
       alt="Logo image"
-      class="logo_background logo_background__image_dark"
+      class="logo_background "
       src="~/assets/images/Logo_black.png"
+      to="/Entries"
     />
   </div>
 </template>
@@ -32,14 +33,12 @@ export default {
   top: 42%;
   left: 50%;
   transform: translate(-42%, -50%);
-
+  transition: 1s;
   height: 13vh;
   width: auto;
 
-  &__image_dark {
-    display: var(--hide-dark);
-  }
-
+  
+  
   &__image_light {
     display: var(--hide-light);
     z-index: 999;
