@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Subneural Space',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteDescription: 'A multi dimetional thought space providing storage for thoughts, ideas, models.',
 
   templates: {
     Post: '/:title',
