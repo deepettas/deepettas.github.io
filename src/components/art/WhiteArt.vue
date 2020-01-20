@@ -5,11 +5,14 @@
     <g-image alt="Logo image" class="white_art mid" src="~/assets/images/wt_mid.png" />
     <g-image alt="Logo image" class="white_art top hover" src="~/assets/images/wt_top.png" />
 
-    <!-- <g-image
+    
+
+    <g-image
       alt="Logo image"
-      class="white_art white_art__image_light"
-      src="~/assets/images/Logo_white.png"
-    />-->
+      class="black_art"
+      src="~/assets/images/Logo_black.png"
+      to="/Entries"
+    />
   </div>
 </a>
 </template>
@@ -64,6 +67,26 @@ $shadowColour: rgba(0, 0, 0, 0.6);
     margin-top: -(10vh);
   }
 }
+
+.black_art{
+  left: 50%;
+  margin-left: -(8vw);
+  user-select: none;
+  width: 16vw;
+  height: auto;
+  display: none;
+  transition: 1s;
+  position: absolute;
+  top: 40%;
+  @media screen and (max-width: 650px) {
+    width: 12vh;
+      display: var(--hide-dark);
+
+    margin-left: -(6vh);
+    margin-top: -(10vh);
+  }
+}
+
 
 .base {
   position: absolute;

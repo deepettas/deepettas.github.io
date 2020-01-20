@@ -34,8 +34,8 @@ export default {
   left: 50%;
   transform: translate(-42%, -50%);
   transition: 1s;
-  height: 13vh;
-  width: auto;
+  width: 16vh;
+  height: auto;
 
   
   
